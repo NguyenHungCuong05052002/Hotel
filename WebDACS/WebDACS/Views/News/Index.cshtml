@@ -1,0 +1,102 @@
+﻿@model PagedList.PagedList<WebDACS.Models.EF.News>
+@using PagedList.Mvc;
+@using PagedList;
+@{
+    ViewBag.Title = "Tin tức";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
+<!-- Slider -->
+<style>
+    .news_section_container {
+        margin-top: 200px;
+    }
+
+    .row-item-new {
+        margin-bottom: 20px;
+    }
+
+    .title-news {
+        font-size: 24px;
+        border-bottom: 1px solid;
+        padding: 15px 0;
+        margin-bottom: 25px;
+    }
+
+    .img-box img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .date {
+        color: #888;
+    }
+
+    .author {
+        color: #555;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    main {
+        margin: 20px;
+    }
+
+    article {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+    }
+</style>
+<div class="container news_section_container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="title-news">Tin tức</h1>
+        </div>
+        <main>
+            <article>
+                <h2>Khám phá sự kết hợp màu sắc trong không gian sống</h2>
+                <p class="date">Ngày đăng: 23/05/2023</p>
+                <p class="author">Bởi: John Doe</p>
+                <img src="~/Content1/nt1/image/c1.png" alt="Màu sắc trong không gian sống" />
+                <p style="font-size:18px;">
+                    Trong bài viết này, chúng ta sẽ khám phá cách sử dụng màu sắc để tạo
+                    nên không gian sống đẹp mắt và thú vị. Màu sắc có thể ảnh hưởng mạnh
+                    mẽ đến cảm xúc và tâm trạng của chúng ta, vì vậy việc chọn màu sắc phù
+                    hợp là rất quan trọng.
+                </p>
+                <a href="https://kientrucvn.com.vn/y-nghia-mau-sac-trong-thiet-ke-khong-gian-song/" target="_blank">Đọc tiếp</a>
+            </article>
+
+            <article>
+                <h2>Tự do sáng tạo với nội thất kiểu vintage</h2>
+                <p class="date">Ngày đăng: 20/05/2023</p>
+                <p class="author">Bởi: Jane Smith</p>
+                <img src="~/Content1/nt1/image/c2.png" alt="Nội thất kiểu vintage" />
+                <p style="font-size:18px;">
+                    Nội thất kiểu vintage đem đến một không gian độc đáo và đầy cá nhân
+                    hóa. Trong bài viết này, chúng ta sẽ tìm hiểu về cách sử dụ dụng nội
+                    thất kiểu vintage để tạo ra một không gian sống đẹp và ấm cúng.
+                </p>
+                <a href="https://housedesign.vn/phong-cach-thiet-ke/noi-that-vintage/" target="_blank">Đọc tiếp</a>
+            </article>
+            <article>
+                <h2>10 ý tưởng nội thất độc đáo cho căn phòng ngủ</h2>
+                <p class="date">Ngày đăng: 18/05/2023</p>
+                <p class="author">Bởi: Lisa Johnson</p>
+                <img src="~/Content1/nt1/image/c3.png"
+                     alt="Ý tưởng nội thất độc đáo cho căn phòng ngủ" />
+                <p style="font-size:18px;">
+                    Phòng ngủ là nơi thư giãn và nghỉ ngơi, vì vậy nó cần được thiết kế
+                    một cách đặc biệt. Trong bài viết này, chúng ta sẽ khám phá 10 ý tưởng
+                    nội thất độc đáo để tạo ra căn phòng ngủ thú vị và đáng nhớ.
+                </p>
+                <a href="https://rangos.vn/10-y-tuong-thiet-ke-phong-ngu-15m2-doc-dao-hien-dai-tien-nghi-" target="_blank">Đọc tiếp</a>
+            </article>
+
+            <!-- Thêm các bài viết khác -->
+        </main>
+    </div>
+   
+
+</div>

@@ -1,0 +1,213 @@
+﻿@{
+    ViewBag.Title = "CK Shop";
+    ViewBag.SeoDescription = "CK Shop";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
+<!-- Slider -->
+@model IEnumerable<WebDACS.Models.EF.Product>
+@using System.Globalization;
+<div class="main_slider" style="background-image: url(/Content1/nt1/image/background.png) ">
+    <div class="container fill_height">
+        <div class="row align-items-center fill_height">
+            <div class="col">
+                <div class="main_slider_content">
+                    <h1 style="justify-content:center;">
+                        Make Your Home Modern Design.
+                    </h1>
+                    <h6>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h6>
+
+                    <div class="red_button shop_now_button"><a href="/san-pham">shop now</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Banner -->
+<!-- New Arrivals -->
+
+
+
+
+
+
+
+<div style="margin-top:30px;" class="container">
+    <h3 class="text-center" style="padding-top: 30px">SERVICES WE OFFER</h3>
+    <div class="row" style="margin-top: 50px">
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="~/Content1/nt1/image/c1.png"
+                     alt=""
+                     class="card image-top"
+                     height="200px" />
+                <div class="card-body">
+                    <h5 class="card-titel text-center">CUSTOM MENUS</h5>
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        ipsam vitae facere eius modi iure possimus, soluta ea inventore.
+                        Omnis!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="~/Content1/nt1/image/c2.png"
+                     alt=""
+                     class="card image-top"
+                     height="200px" />
+                <div class="card-body">
+                    <h5 class="card-titel text-center">SMARTEST WAY</h5>
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        ipsam vitae facere eius modi iure possimus, soluta ea inventore.
+                        Omnis!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="~/Content1/nt1/image/c3.png"
+                     alt=""
+                     class="card image-top"
+                     height="200px" />
+                <div class="card-body">
+                    <h5 class="card-titel text-center">USER FRIENDLEY</h5>
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        ipsam vitae facere eius modi iure possimus, soluta ea inventore.
+                        Omnis!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- card1 -->
+<!-- card2 -->
+<div class="container">
+    <div class="row" style="margin-top: 100px">
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card" id="tpc">
+                <img src="~/Content1/nt1/image/ch.png" alt="" class="card image-top" />
+                <div class="card-img-overlay">
+                    <h4 class="card-titel">Best Chair</h4>
+                    <p class="card-text">Lorem ipsum dolor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card" id="tpc">
+                <img src="~/Content1/nt1/image/sf.png" alt="" class="card image-top" />
+                <div class="card-img-overlay">
+                    <h4 class="card-titel">Sofa</h4>
+                    <p class="card-text">Lorem ipsum dolor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card" id="tpc">
+                <img src="~/Content1/nt1/image/work desk.png" alt="" class="card image-top" />
+                <div class="card-img-overlay">
+                    <h4 class="card-titel">Work Desk</h4>
+                    <p class="card-text">Lorem ipsum dolor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Action("MenuProductCategory", "Menu")
+<!-- Deal of the week -->
+
+
+<div class="deal_ofthe_week">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="deal_ofthe_week_img">
+                    <img src="~/Content1/nt1/image/card8.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 text-right deal_ofthe_week_col">
+                <div class="deal_ofthe_week_content d-flex flex-column align-items-center float-right">
+                    <div class="section_title">
+                        <h2>Giảm giá</h2>
+                    </div>
+                    <ul class="timer">
+                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                            <div id="day" class="timer_num">5</div>
+                            <div class="timer_unit">Day</div>
+                        </li>
+                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                            <div id="hour" class="timer_num">12</div>
+                            <div class="timer_unit">Hours</div>
+                        </li>
+                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                            <div id="minute" class="timer_num">45</div>
+                            <div class="timer_unit">Mins</div>
+                        </li>
+                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                            <div id="second" class="timer_num">23</div>
+                            <div class="timer_unit">Sec</div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Best Sellers -->
+@Html.Action("Partial_ProductSales", "Products")
+<!-- Benefit -->
+
+<div class="benefit">
+    <div class="container">
+        <div class="row benefit_row">
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>free shipping</h6>
+                        <p>Suffered Alteration in Some Form</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa-solid fa-headset" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>Support 24/7</h6>
+                        <p>The Internet Tend To Repeat</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>45 days return</h6>
+                        <p>Making it Look Like Readable</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>opening all week</h6>
+                        <p>8AM - 09PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Blogs -->
+@Html.Action("Partial_News_Home", "News")

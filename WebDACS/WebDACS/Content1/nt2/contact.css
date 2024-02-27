@@ -1,0 +1,142 @@
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 100px 8% 120px;
+    background: #f3f3f3;
+}
+
+.content-text {
+    margin-bottom: 10px;
+}
+
+.content-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.content-text h2 span {
+    color: #388b6f;
+}
+
+.content-text p {
+    font-weight: bold;
+}
+
+.list {
+    margin-top: 16px;
+}
+
+.list li {
+    margin-bottom: 12px;
+}
+
+.list li a {
+    display: block;
+    color: #388b6f;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 160px;
+}
+
+.contact-form .submit {
+    display: inline-block;
+    font-size: 15px;
+    background: #388b6f;
+    color: white;
+    width: 160px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contact-form .submit:hover {
+    width: 175px;
+}
+
+@media (max-width: 920px) {
+    .contact {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+}
+
+
+/* Contact Section End */
+
+
+/* Review Section Start */
+
+.review {
+    padding: 120px 8% 120px;
+    background: white;
+}
+
+.review-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.box {
+    background: #f3f3f3;
+    padding: 35px 45px;
+    height: 50vh;
+    border-radius: 8px;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.img img {
+    width: 100px;
+    border-radius: 100px;
+}
+
+.review .star i {
+    color: rgba(255, 153, 0);
+    margin-top: 10px;
+}
+
+@media (max-width: 920px) {
+    .review-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.main-txt {
+    text-align: center;
+}
+
+.main-txt h3 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #388b6f;
+    text-shadow: 0px 1px 1px black;
+}

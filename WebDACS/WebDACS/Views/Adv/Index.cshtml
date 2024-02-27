@@ -1,0 +1,124 @@
+﻿@model PagedList.PagedList<WebDACS.Models.EF.Adv>
+@using PagedList.Mvc;
+@using PagedList;
+@{
+    ViewBag.Title = "Khuyến mãi";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
+<!-- Slider -->
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/contact_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/contact_responsive.css">
+<!-- Style Css Link -->
+<link rel="stylesheet" href="~/Content1/nt2/contact.css" />
+<!-- Style Css Link -->
+<!-- Font Awesome Cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<!-- Font Awesome Cdn -->
+<style>
+    .news_section_container {
+        margin-top: 200px;
+    }
+
+    .row-item-new {
+        margin-bottom: 20px;
+    }
+
+    .title-news {
+        font-size: 24px;
+        border-bottom: 1px solid;
+        padding: 15px 0;
+        margin-bottom: 25px;
+    }
+
+    .img-box img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+</style>
+<div class="container news_section_container">
+
+    @if (Model != null && Model.Any())
+    {
+        foreach (var item in Model)
+        {
+            <div class="row row-item-new">
+                <div class="col-md-3">
+                    <div class="img-box">
+                        <a href="" title="@item.Title"><img src="@item.Image" alt="@item.Title" /></a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="content-box">
+                        <h3 style="color:red;">@item.Title</h3>
+                        <div class="description-box">
+                            @item.Description
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        <div>
+            <div class="col-6"></div>
+            <div class="col-6" style="text-align:right;">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+            </div>
+        </div>
+    }
+    <section class="review" id="review">
+        <div class="main-txt">
+            <h3>Khách Hàng <span>Đánh Giá</span></h3>
+        </div>
+
+        <div class="review-content">
+            <div class="box">
+                <div class="img">
+                    <img src="~/Content1/nt2/./images/pic-1.png" alt="" />
+                </div>
+                <h3>Elon Musk</h3>
+                <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, adipisci.
+                </p>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="~/Content1/nt2/./images/pic-2.png" alt="" />
+                </div>
+                <h3>Elon Musk</h3>
+                <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, adipisci.
+                </p>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="~/Content1/nt2/./images/pic-3.png" alt="" />
+                </div>
+                <h3>Elon Musk</h3>
+                <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, adipisci.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</div>

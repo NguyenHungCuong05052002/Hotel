@@ -1,0 +1,34 @@
+﻿@model IEnumerable<WebDACS.Models.EF.Product>
+@using System.Globalization;
+@{
+    ViewBag.Title = "Shop";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
+<h2>Shop</h2>
+
+<div class="container">
+    <h3 class="text-center" style="margin-top: 50px;padding-top:20px;">Thông Tin  </h3>
+    <div class="row" style="margin-top: 50px">
+        @foreach (var item in Model)
+        {
+           
+           
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card" id="c">
+                        <a href=" @item.Id">
+                            <img style="height:152px;width:253px;" src="@item.Image" alt="" class="card image-top" />
+                        </a>
+                        <div class="card-body">
+                            
+                            <a style="padding-left:75px;" href="/chi-tiet/@item.Alias-p@(item.Id)">@item.Title</a>
+                            <p class="card-text text-center">@string.Format(new CultureInfo("vi-VN", false), "{0:c0}", item.Price)</p>
+                            <div id="btn3"><button>Shop Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            
+        }
+    </div>
+
+</div>

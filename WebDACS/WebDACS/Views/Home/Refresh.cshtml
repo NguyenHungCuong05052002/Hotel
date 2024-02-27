@@ -1,0 +1,40 @@
+﻿@model WebDACS.Models.ThongKeModel
+@if(Model!=null)
+{
+    <div class="thongke">
+        <table class="table">
+            <tr>
+                <td>Hôm nay</td>
+                <th>@Model.HomNay</th>
+            </tr>
+            <tr>
+                <td>Hôm qua</td>
+                <th>@Model.HomQua</th>
+            </tr>
+            <tr>
+                <td>Tuần này</td>
+                <th>@Model.TuanNay</th>
+            </tr>
+            <tr>
+                <td>Tuần trước</td>
+                <th>@Model.TuanTruoc</th>
+            </tr>
+            <tr>
+                <td>Tháng này</td>
+                <th>@Model.ThangNay</th>
+            </tr>
+            <tr>
+                <td>Tháng trước</td>
+                <th>@Model.ThangTruoc</th>
+            </tr>
+            <tr>
+                <td>Tất cả</td>
+                <th>@Model.TatCa</th>
+            </tr>
+            <tr>
+                <td>Số người Online</td>
+                <th>@ViewBag.visitors_online</th>
+            </tr>
+        </table>
+    </div>
+}
